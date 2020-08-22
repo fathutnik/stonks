@@ -7,7 +7,7 @@ from requests.auth import HTTPBasicAuth
 
 answer = requests.get('http://stonks.goto.msk.ru/api/robot/stocks/', auth=HTTPBasicAuth('fathutnik', 'Superpapa1'))
 
-token = "1293020718:AAFeIGEp2qImDvBTJvwu8bvrAFL1FNF6tHs"
+token = ""
 # Обходим блокировку с помощью прокси
 # telebot.apihelper.proxy = {'https': 'socks5h://geek:socks@t.geekclass.ru:7777'}
 # подключаемся к телеграму
@@ -23,7 +23,6 @@ state = 1
 real_news_ad = []
 ans = None
 login = 'fathutnik'
-password = 'Superpapa1'
 
 
 @bot.message_handler(commands=["start"])
